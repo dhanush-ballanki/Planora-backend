@@ -1,0 +1,24 @@
+# Common Django shortcuts and overrides
+
+framework: django
+aliases:
+  s: run
+  mm: makemigrations
+  m: migrate
+  sh: shell
+  csu: createsuperuser
+overrides:
+  run: python manage.py runserver
+commands:
+  shell:
+    desc: Open Django shell
+    exec: python manage.py shell
+  createsuperuser:
+    desc: Create a superuser
+    exec: python manage.py createsuperuser
+  makemigrations:
+    desc: Make migrations
+    exec: python manage.py makemigrations
+  migrate:
+    desc: migrate
+    exec: python manage.py migrate
